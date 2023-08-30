@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: bookservice
+      profile: prod
+      label: master
+      uri: http://localhost:8092

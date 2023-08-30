@@ -1,0 +1,15 @@
+server:
+  port: 8092
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:8180/eureka/,http://eureka02:8181/eureka/
+spring:
+  application:
+    name: ConfigService
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://E:/data/springcloud-test/config
+          default-label: master
